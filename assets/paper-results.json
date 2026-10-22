@@ -37,7 +37,7 @@
           "objectiveCompletionPercent": 72.9
         },
         "coding": {
-          "passRatePercent": 52.9
+          "passRatePercent": 52.8
         }
       }
     },
@@ -137,10 +137,10 @@
           "objectiveCompletionPercentagePoints": 0.3
         },
         "coding": {
-          "passRatePercentagePoints": 1.1
+          "passRatePercentagePoints": 0.9
         }
       },
-      "basis": "Deltas retained as reported in the latest user-supplied paper screenshot. Its caption states that deltas are calculated before rounding; the unrounded Astra Coding inputs are not provided. The supplied Coding delta is +1.1 percentage points and is not independently recomputed."
+      "basis": "Deltas retained as reported in the corrected user-supplied paper screenshot. Its caption states that deltas are calculated before rounding; Astra Coding is reported as +0.9 percentage points."
     }
   ],
   "supplementaryEvaluations": [
@@ -212,8 +212,8 @@
     "coding-results.json"
   ],
   "notes": [
-    "Main-table metrics and supplied deltas reproduce the latest user-supplied paper screenshot. Astra Coding revisions are recorded in updates. Precise historical values and audit metadata remain in the domain files.",
-    "Supplied deltas are percentage-point gains, not relative percentage improvements. The Coding Luna +10.1-point delta differs from subtraction of displayed one-decimal values because it is based on unrounded values.",
+    "Main-table metrics and supplied deltas reproduce the corrected user-supplied paper screenshot. Terminal-Bench revisions are recorded in updates. Historical values and audit metadata remain available in the domain files.",
+    "Supplied deltas are percentage-point gains, not relative percentage improvements. The corrected paper table reports Luna Coding 52.8% to 62.9% (+10.1 points) and Astra Coding 86.7% to 87.6% (+0.9 points).",
     "Marketing used the same 100 public tasks for optimization and evaluation; these values do not establish independent held-out generalization.",
     "The new Support and Coding Astra aggregates are user-supplied paper results. No missing benchmark version, task count, per-task audit, confidence interval, or validation status is inferred.",
     "The Luna medium baseline-to-optimized comparison includes the earlier harness optimization and the staged continuation; it must not be attributed entirely to Staged GEPA."
@@ -238,6 +238,25 @@
       "previousDeltaPercentagePoints": 2.6,
       "deltaPercentagePoints": 1.1,
       "basis": "Latest paper table reports Codex 86.7%, DSH (Ours) 87.6%, and a supplied +1.1 percentage-point delta. Values are transcribed as reported; no unrounded inputs are inferred."
+    },
+    {
+      "date": "2026-10-22",
+      "source": "user-provided-corrected-paper-screenshot",
+      "row": "luna-medium-base",
+      "metric": "coding.passRatePercent",
+      "previousValue": 52.9,
+      "value": 52.8,
+      "basis": "Corrected Table 1 reports the Luna medium baseline as 52.8%; the optimized value remains 62.9% and the supplied gain remains +10.1 percentage points."
+    },
+    {
+      "date": "2026-10-22",
+      "source": "user-provided-corrected-paper-screenshot",
+      "baselineRow": "astra-max-base",
+      "optimizedRow": "astra-max-ours",
+      "metric": "coding.passRatePercentagePoints",
+      "previousValue": 1.1,
+      "value": 0.9,
+      "basis": "Corrected Table 1 reports the Astra Coding gain as +0.9 percentage points; baseline and optimized pass rates remain 86.7% and 87.6%."
     }
   ]
 }

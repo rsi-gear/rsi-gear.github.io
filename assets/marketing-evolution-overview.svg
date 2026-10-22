@@ -1016,14 +1016,14 @@ L 511.404 347.032
    <g id="patch_5">
     <path d="M 87.176243 347.032
 L 117.889565 347.032
-L 117.889565 208.579065
-L 87.176243 208.579065
+L 117.889565 208.762377
+L 87.176243 208.762377
 z
 " clip-path="url(#pcc3c615e22)" style="fill: #cfcfcf"/>
    </g>
    <g id="text_11">
-    <!-- 52.9 -->
-    <g style="fill: #292929" transform="translate(86.782904 200.150951) scale(0.18 -0.18)">
+    <!-- 52.8 -->
+    <g style="fill: #292929" transform="translate(86.782904 200.334263) scale(0.18 -0.18)">
      <defs>
       <path id="STIXGeneral-Bold-18" d="M 3008 4326
 L 2720 3514
@@ -1114,7 +1114,7 @@ z
      <use xlink:href="#STIXGeneral-Bold-18"/>
      <use xlink:href="#STIXGeneral-Bold-15" transform="translate(50 0)"/>
      <use xlink:href="#STIXGeneral-Bold-11" transform="translate(100 0)"/>
-     <use xlink:href="#STIXGeneral-Bold-1c" transform="translate(125 0)"/>
+     <use xlink:href="#STIXGeneral-Bold-1b" transform="translate(125 0)"/>
     </g>
    </g>
    <g id="patch_6">
@@ -1266,7 +1266,7 @@ z
     </g>
    </g>
    <g id="text_14">
-    <!-- +31.4 pp -->
+    <!-- +31.5 pp -->
     <g style="fill: #42649a" transform="translate(102.328516 93.070555) scale(0.18 -0.18)">
      <defs>
       <path id="STIXGeneral-Bold-e" d="M 4384 1338
@@ -1307,7 +1307,7 @@ z
      <use xlink:href="#STIXGeneral-Bold-16" transform="translate(75 0)"/>
      <use xlink:href="#STIXGeneral-Bold-14" transform="translate(125 0)"/>
      <use xlink:href="#STIXGeneral-Bold-11" transform="translate(175 0)"/>
-     <use xlink:href="#STIXGeneral-Bold-17" transform="translate(200 0)"/>
+     <use xlink:href="#STIXGeneral-Bold-18" transform="translate(200 0)"/>
      <use xlink:href="#STIXGeneral-Bold-3" transform="translate(250 0)"/>
      <use xlink:href="#STIXGeneral-Bold-53" transform="translate(275 0)"/>
      <use xlink:href="#STIXGeneral-Bold-53" transform="translate(330.59375 0)"/>

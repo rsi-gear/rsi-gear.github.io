@@ -5,7 +5,12 @@
   "metric": "task pass rate",
   "baseline": {
     "effort": "medium",
-    "passRate": 52.87
+    "passRate": 52.8,
+    "source": {
+      "type": "user-provided-corrected-paper-screenshot",
+      "date": "2026-10-22",
+      "precision": "Reported to one decimal place; no additional precision inferred."
+    }
   },
   "optimized": {
     "effort": "medium",
@@ -21,14 +26,14 @@
     "url": "https://github.com/rsi-gear/gear/blob/1c32819b7cf53ab5d99838cb0865ae07cf736a8d/README.md"
   },
   "notes": [
-    "Values reproduce the published README summary; the baseline and optimized columns use medium effort, and the separate Max reasoning column uses max effort.",
+    "The current Luna medium baseline follows the corrected paper table (52.8%). Optimized medium and separate max-effort results retain the published README values.",
     "The repository does not include round-by-round Coding results or a Coding objective-completion metric; no missing values are inferred.",
     "The summary does not state the scored task count; no task count is inferred from the rounded percentages.",
-    "The original source and notes above describe the retained Luna summary. Existing precise Luna pass rates remain 52.87%, 62.92%, and 84.26%.",
+    "The original README source is retained for the optimized medium and max values (62.92% and 84.26%). Its superseded 52.87% baseline is retained under historicalLunaBaseline.",
     "Astra values and the one-decimal Luna medium display values were supplied in the user paper table dated 2026-10-22.",
-    "Paper-table deltas are supplied percentage-point differences computed from unrounded values; in particular, the displayed 52.9% and 62.9% must retain the supplied +10.1-point delta.",
+    "The corrected paper table reports Luna medium 52.8% to 62.9%, with a supplied +10.1-percentage-point delta.",
     "No additional task count, held-out validation, or execution audit is inferred for the newly supplied Astra results.",
-    "The latest user-supplied paper screenshot dated 2026-10-22 reports Astra max DSH (Ours) at 87.6% and a supplied +1.1-point delta. Both are retained as reported; unrounded Astra inputs are not provided."
+    "The corrected user-supplied paper screenshot dated 2026-10-22 reports Astra max Codex at 86.7%, DSH (Ours) at 87.6%, and a supplied +0.9-percentage-point delta."
   ],
   "metricUnits": {
     "passRate": "percent",
@@ -36,12 +41,12 @@
   },
   "paperTable": {
     "source": {
-      "type": "user-provided-paper-screenshot",
+      "type": "user-provided-corrected-paper-screenshot",
       "date": "2026-10-22",
       "precision": "Displayed percentages rounded to one decimal place; supplied deltas are computed from unrounded values."
     },
     "lunaMediumDisplayPercent": {
-      "baseline": 52.9,
+      "baseline": 52.8,
       "optimized": 62.9
     },
     "lunaMediumSuppliedDeltaPercentagePoints": 10.1
@@ -59,14 +64,24 @@
       "passRate": 87.6
     },
     "suppliedDeltaPercentagePoints": {
-      "passRate": 1.1
+      "passRate": 0.9
     },
     "source": {
-      "type": "user-provided-paper-screenshot",
+      "type": "user-provided-corrected-paper-screenshot",
       "date": "2026-10-22",
       "precision": "Displayed pass rates rounded to one decimal place. Delta retained as supplied in the latest paper table.",
-      "correction": "The latest paper screenshot supersedes the earlier 89.3% / +2.6-point update with 87.6% / +1.1 points; Codex remains 86.7%. The revision history is recorded in paper-results.json."
+      "correction": "The corrected paper screenshot changes the previously supplied Astra delta from +1.1 to +0.9 percentage points. Codex remains 86.7% and DSH (Ours) remains 87.6%. The revision history is recorded in paper-results.json."
     },
-    "deltaBasis": "Retained as reported in the latest user-supplied paper table (+1.1 percentage points). The caption states that deltas are calculated before rounding; unrounded Astra Coding inputs are not provided, so the delta is not independently recomputed."
+    "deltaBasis": "Retained as reported in the corrected user-supplied paper table: +0.9 percentage points. The caption states that deltas are calculated before rounding."
+  },
+  "historicalLunaBaseline": {
+    "effort": "medium",
+    "passRate": 52.87,
+    "source": {
+      "file": "README.md",
+      "commit": "1c32819b7cf53ab5d99838cb0865ae07cf736a8d",
+      "url": "https://github.com/rsi-gear/gear/blob/1c32819b7cf53ab5d99838cb0865ae07cf736a8d/README.md"
+    },
+    "note": "Superseded by the corrected paper table baseline of 52.8%; retained for provenance."
   }
 }
