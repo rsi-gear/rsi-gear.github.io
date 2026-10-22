@@ -47,11 +47,11 @@ dialog{width:min(1400px,96vw);max-height:94dvh;padding:0;border:1px solid var(--
 }
 
 /* GEAR brand: original three-spoke mark, white surfaces, strong sans typography. */
-.brand img,.hero-wordmark img,.footer-brand img{filter:grayscale(1) contrast(4);box-shadow:none;background:none}
-.brand img{width:32px;height:32px;mix-blend-mode:multiply}
+.brand img,.hero-wordmark img,.footer-brand img{box-shadow:none;background:transparent}
+.brand img{width:32px;height:32px}
 .brand{font-size:23px;font-weight:750;letter-spacing:-1px}
 .hero-wordmark{display:flex;justify-content:center;align-items:center;gap:17px;font-family:var(--sans);font-size:57px;font-weight:750;letter-spacing:-3px;line-height:1;margin:24px 0 26px}
-.hero-wordmark img{width:65px;height:65px;mix-blend-mode:multiply}
+.hero-wordmark img{width:65px;height:65px}
 .hero h1{font-family:var(--sans);font-weight:700;font-size:46px;line-height:1.16;letter-spacing:-1.9px}
 h2{font-family:var(--sans);font-weight:680;letter-spacing:-1.7px}
 .hero-description{color:#737b6b}
@@ -66,7 +66,7 @@ h2{font-family:var(--sans);font-weight:680;letter-spacing:-1.7px}
 .system-section{background:#f7f8f4}
 .citation{background:#f5f6f1}
 .footer-brand{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:25px;font-weight:700;letter-spacing:-1px}
-.footer-brand img{width:28px;height:28px;mix-blend-mode:multiply}
+.footer-brand img{width:28px;height:28px}
 .star-link{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;flex-shrink:0}
 .star-link .star-icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 .nav-github.star-link{font-size:13px;gap:8px;color:#51574b}
