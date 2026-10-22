@@ -28,7 +28,7 @@
     "Astra values and the one-decimal Luna medium display values were supplied in the user paper table dated 2026-10-22.",
     "Paper-table deltas are supplied percentage-point differences computed from unrounded values; in particular, the displayed 52.9% and 62.9% must retain the supplied +10.1-point delta.",
     "No additional task count, held-out validation, or execution audit is inferred for the newly supplied Astra results.",
-    "Astra max DSH (Ours) was updated by the user to 89.3% on 2026-10-22. Its +2.6-point delta uses the reported percentages; the retained Luna paper delta still uses the original unrounded calculation."
+    "The latest user-supplied paper screenshot dated 2026-10-22 reports Astra max DSH (Ours) at 87.6% and a supplied +1.1-point delta. Both are retained as reported; unrounded Astra inputs are not provided."
   ],
   "metricUnits": {
     "passRate": "percent",
@@ -56,17 +56,17 @@
     "optimized": {
       "harness": "DSH",
       "variant": "Ours",
-      "passRate": 89.3
+      "passRate": 87.6
     },
     "suppliedDeltaPercentagePoints": {
-      "passRate": 2.6
+      "passRate": 1.1
     },
     "source": {
-      "type": "user-provided-paper-screenshot-and-correction",
+      "type": "user-provided-paper-screenshot",
       "date": "2026-10-22",
-      "precision": "Reported pass rates shown to one decimal place. The updated Coding delta is calculated from these reported values.",
-      "correction": "The user updated Astra max DSH (Ours) from 87.6% to 89.3%; Codex remains 86.7%."
+      "precision": "Displayed pass rates rounded to one decimal place. Delta retained as supplied in the latest paper table.",
+      "correction": "The latest paper screenshot supersedes the earlier 89.3% / +2.6-point update with 87.6% / +1.1 points; Codex remains 86.7%. The revision history is recorded in paper-results.json."
     },
-    "deltaBasis": "Calculated from the updated reported pass rates: 89.3 - 86.7 = 2.6 percentage points."
+    "deltaBasis": "Retained as reported in the latest user-supplied paper table (+1.1 percentage points). The caption states that deltas are calculated before rounding; unrounded Astra Coding inputs are not provided, so the delta is not independently recomputed."
   }
 }

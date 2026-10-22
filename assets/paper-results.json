@@ -13,7 +13,7 @@
   },
   "display": {
     "mainTableDecimalPlaces": 1,
-    "deltaPolicy": "Retain supplied paper deltas; the corrected Astra Coding delta is calculated from the reported updated percentages."
+    "deltaPolicy": "Retain the deltas supplied in the latest paper table; do not recompute them from rounded display values."
   },
   "metricDefinitions": {
     "passRatePercent": "Percentage of tasks passing all scored checks.",
@@ -100,7 +100,7 @@
           "objectiveCompletionPercent": 88.7
         },
         "coding": {
-          "passRatePercent": 89.3
+          "passRatePercent": 87.6
         }
       }
     }
@@ -137,10 +137,10 @@
           "objectiveCompletionPercentagePoints": 0.3
         },
         "coding": {
-          "passRatePercentagePoints": 2.6
+          "passRatePercentagePoints": 1.1
         }
       },
-      "basis": "Marketing and Support deltas retain the user-supplied paper table values calculated before rounding. Coding uses the updated reported percentages: 89.3 - 86.7 = 2.6 percentage points."
+      "basis": "Deltas retained as reported in the latest user-supplied paper screenshot. Its caption states that deltas are calculated before rounding; the unrounded Astra Coding inputs are not provided. The supplied Coding delta is +1.1 percentage points and is not independently recomputed."
     }
   ],
   "supplementaryEvaluations": [
@@ -212,7 +212,7 @@
     "coding-results.json"
   ],
   "notes": [
-    "Main-table metrics reproduce the user-supplied paper screenshot as one-decimal percentages, with the Astra Coding correction recorded in updates. Precise historical values and audit metadata remain in the domain files.",
+    "Main-table metrics and supplied deltas reproduce the latest user-supplied paper screenshot. Astra Coding revisions are recorded in updates. Precise historical values and audit metadata remain in the domain files.",
     "Supplied deltas are percentage-point gains, not relative percentage improvements. The Coding Luna +10.1-point delta differs from subtraction of displayed one-decimal values because it is based on unrounded values.",
     "Marketing used the same 100 public tasks for optimization and evaluation; these values do not establish independent held-out generalization.",
     "The new Support and Coding Astra aggregates are user-supplied paper results. No missing benchmark version, task count, per-task audit, confidence interval, or validation status is inferred.",
@@ -227,6 +227,17 @@
       "previousValue": 87.6,
       "value": 89.3,
       "deltaPercentagePoints": 2.6
+    },
+    {
+      "date": "2026-10-22",
+      "source": "user-provided-paper-screenshot",
+      "row": "astra-max-ours",
+      "metric": "coding.passRatePercent",
+      "previousValue": 89.3,
+      "value": 87.6,
+      "previousDeltaPercentagePoints": 2.6,
+      "deltaPercentagePoints": 1.1,
+      "basis": "Latest paper table reports Codex 86.7%, DSH (Ours) 87.6%, and a supplied +1.1 percentage-point delta. Values are transcribed as reported; no unrounded inputs are inferred."
     }
   ]
 }
