@@ -27,7 +27,8 @@
     "The original source and notes above describe the retained Luna summary. Existing precise Luna pass rates remain 52.87%, 62.92%, and 84.26%.",
     "Astra values and the one-decimal Luna medium display values were supplied in the user paper table dated 2026-10-22.",
     "Paper-table deltas are supplied percentage-point differences computed from unrounded values; in particular, the displayed 52.9% and 62.9% must retain the supplied +10.1-point delta.",
-    "No additional task count, held-out validation, or execution audit is inferred for the newly supplied Astra results."
+    "No additional task count, held-out validation, or execution audit is inferred for the newly supplied Astra results.",
+    "Astra max DSH (Ours) was updated by the user to 89.3% on 2026-10-22. Its +2.6-point delta uses the reported percentages; the retained Luna paper delta still uses the original unrounded calculation."
   ],
   "metricUnits": {
     "passRate": "percent",
@@ -55,15 +56,17 @@
     "optimized": {
       "harness": "DSH",
       "variant": "Ours",
-      "passRate": 87.6
+      "passRate": 89.3
     },
     "suppliedDeltaPercentagePoints": {
-      "passRate": 0.9
+      "passRate": 2.6
     },
     "source": {
-      "type": "user-provided-paper-screenshot",
+      "type": "user-provided-paper-screenshot-and-correction",
       "date": "2026-10-22",
-      "precision": "Displayed percentages rounded to one decimal place; supplied deltas are computed from unrounded values."
-    }
+      "precision": "Reported pass rates shown to one decimal place. The updated Coding delta is calculated from these reported values.",
+      "correction": "The user updated Astra max DSH (Ours) from 87.6% to 89.3%; Codex remains 86.7%."
+    },
+    "deltaBasis": "Calculated from the updated reported pass rates: 89.3 - 86.7 = 2.6 percentage points."
   }
 }
