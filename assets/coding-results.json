@@ -1,0 +1,69 @@
+{
+  "benchmark": "Terminal-Bench 2.1",
+  "model": "gpt-5.6-luna",
+  "harness": "DSH",
+  "metric": "task pass rate",
+  "baseline": {
+    "effort": "medium",
+    "passRate": 52.87
+  },
+  "optimized": {
+    "effort": "medium",
+    "passRate": 62.92
+  },
+  "max": {
+    "effort": "max",
+    "passRate": 84.26
+  },
+  "source": {
+    "file": "README.md",
+    "commit": "1c32819b7cf53ab5d99838cb0865ae07cf736a8d",
+    "url": "https://github.com/rsi-gear/gear/blob/1c32819b7cf53ab5d99838cb0865ae07cf736a8d/README.md"
+  },
+  "notes": [
+    "Values reproduce the published README summary; the baseline and optimized columns use medium effort, and the separate Max reasoning column uses max effort.",
+    "The repository does not include round-by-round Coding results or a Coding objective-completion metric; no missing values are inferred.",
+    "The summary does not state the scored task count; no task count is inferred from the rounded percentages.",
+    "The original source and notes above describe the retained Luna summary. Existing precise Luna pass rates remain 52.87%, 62.92%, and 84.26%.",
+    "Astra values and the one-decimal Luna medium display values were supplied in the user paper table dated 2026-10-22.",
+    "Paper-table deltas are supplied percentage-point differences computed from unrounded values; in particular, the displayed 52.9% and 62.9% must retain the supplied +10.1-point delta.",
+    "No additional task count, held-out validation, or execution audit is inferred for the newly supplied Astra results."
+  ],
+  "metricUnits": {
+    "passRate": "percent",
+    "suppliedDeltaPercentagePoints": "percentage points"
+  },
+  "paperTable": {
+    "source": {
+      "type": "user-provided-paper-screenshot",
+      "date": "2026-10-22",
+      "precision": "Displayed percentages rounded to one decimal place; supplied deltas are computed from unrounded values."
+    },
+    "lunaMediumDisplayPercent": {
+      "baseline": 52.9,
+      "optimized": 62.9
+    },
+    "lunaMediumSuppliedDeltaPercentagePoints": 10.1
+  },
+  "astra": {
+    "model": "gpt-6-astra",
+    "effort": "max",
+    "baseline": {
+      "harness": "Codex",
+      "passRate": 86.7
+    },
+    "optimized": {
+      "harness": "DSH",
+      "variant": "Ours",
+      "passRate": 87.6
+    },
+    "suppliedDeltaPercentagePoints": {
+      "passRate": 0.9
+    },
+    "source": {
+      "type": "user-provided-paper-screenshot",
+      "date": "2026-10-22",
+      "precision": "Displayed percentages rounded to one decimal place; supplied deltas are computed from unrounded values."
+    }
+  }
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="840" viewBox="0 0 1680 840" role="img" aria-labelledby="title desc">
+<title id="title">Gear: From task experience to reusable agent improvements</title>
+<desc id="desc">The inner loop exchanges actions, observations, and rewards between a rollout agent and its task environment. The outer loop diagnoses cross-task trajectories and evaluation feedback, proposes harness candidates, and evaluates and selects the harness for subsequent tasks. Model training is experimental; seed task generation is future work. Dashed extension branches do not represent an implemented joint optimization loop.</desc>
+<rect x="0" y="0" width="1680" height="840" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="68" y="66" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#197F83" text-anchor="start">Gear</text>
+<path d="M185 35 L185 104" fill="none" stroke="#DEE8E9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="215" y="65" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#263D44" text-anchor="start">From task experience to reusable agent improvements</text>
+<text x="215" y="102" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#53676E" text-anchor="start">A two-level framework for agent improvement</text>
+<path d="M68 130 L1604 130" fill="none" stroke="#DEE8E9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="68" y="174" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#5A718A" text-anchor="start">Outer loop</text>
+<text x="226" y="174" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#53676E" text-anchor="start">Improve across tasks</text>
+<circle cx="308.130859375" cy="212" r="16" fill="#197F83" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="308.130859375" y="219" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="336.130859375" y="223" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#263D44" text-anchor="start">Serve</text>
+<circle cx="758.4853515625" cy="212" r="16" fill="#5A718A" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="758.4853515625" y="219" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="786.4853515625" y="223" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#263D44" text-anchor="start">Diagnose</text>
+<circle cx="1244.63818359375" cy="212" r="16" fill="#197F83" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1244.63818359375" y="219" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="1272.63818359375" y="223" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#263D44" text-anchor="start">Evolve</text>
+<path d="M1534 345 L1578 345 C1596 345 1596 345 1596 363 L1596 690 C1596 708 1596 708 1578 708 L1320 708" fill="none" stroke="#197F83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1330 702.5 L1320 708 L1330 713.5" fill="none" stroke="#197F83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M934 708 L56 708 C34 708 34 708 34 686 L34 492 C34 470 34 470 56 470 L116 470" fill="none" stroke="#5A718A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="478" y="687" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#5A718A" text-anchor="middle">Selected harness for subsequent tasks</text>
+<rect x="116" y="260" width="536" height="328" rx="20" fill="#F0F3F9" stroke="#D6DFEB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="104" y="272" width="536" height="328" rx="20" fill="#FAF6ED" stroke="#E8DFCC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="92" y="284" width="536" height="328" rx="20" fill="#F3F9F8" stroke="#B8D7D3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="116" y="324" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#197F83" text-anchor="start">Inner loop</text>
+<text x="116" y="356" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#53676E" text-anchor="start">Interact within each task</text>
+<text x="600" y="324" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#53676E" text-anchor="end">Task i</text>
+<path d="M116 370 L604 370" fill="none" stroke="#D3E4E1" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="116" y="410" width="230" height="142" rx="12" fill="#FFFFFF" stroke="#A9BFC2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="231" y="447" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#263D44" text-anchor="middle">Rollout Agent</text>
+<rect x="130" y="475" width="103" height="46" rx="6" fill="#EAF5F4" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="181.5" y="505" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#197F83" text-anchor="middle">Harness</text>
+<rect x="242" y="475" width="90" height="46" rx="6" fill="#F2EEF8" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="287" y="505" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#715C91" text-anchor="middle">Model</text>
+<path d="M92 470 L116 470" fill="none" stroke="#5A718A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M106 464.5 L116 470 L106 475.5" fill="none" stroke="#5A718A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="540" cy="447" r="34" fill="#FFFFFF" stroke="#197F83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="540" cy="447" rx="15" ry="34" fill="none" stroke="#197F83" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M506 447 L574 447" fill="none" stroke="#197F83" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M512 429 L568 429" fill="none" stroke="#197F83" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M512 465 L568 465" fill="none" stroke="#197F83" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="540" y="517" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#263D44" text-anchor="middle">Environment</text>
+<path d="M358 436 C397 390 470 390 505 426" fill="none" stroke="#197F83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M493 423 L505 426 L502 414" fill="none" stroke="#197F83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="430" y="394" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#197F83" text-anchor="middle">actions</text>
+<path d="M506 479 C472 490 414 546 358 503" fill="none" stroke="#197F83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M359 515 L358 503 L370 507" fill="none" stroke="#197F83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="449" y="587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#197F83" text-anchor="middle">observations + rewards</text>
+<path d="M645 460 L776 460" fill="none" stroke="#5A718A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M766 454.5 L776 460 L766 465.5" fill="none" stroke="#5A718A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="710" y="407" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="middle">Trajectories</text>
+<text x="710" y="437" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="middle">+ feedback</text>
+<text x="837" y="383" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#263D44" text-anchor="middle">Meta Agent</text>
+<circle cx="837" cy="460" r="39" fill="#FFFFFF" stroke="#5A718A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M821 474 L837 443 L855 470 Z" fill="none" stroke="#5A718A" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="821" cy="474" r="5" fill="#FFFFFF" stroke="#5A718A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="837" cy="443" r="5" fill="#FFFFFF" stroke="#5A718A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="855" cy="470" r="5" fill="#FFFFFF" stroke="#5A718A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="837" y="536" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#53676E" text-anchor="middle">Analyze &amp; plan</text>
+<path d="M889 460 L998 460" fill="none" stroke="#263D44" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="959" y="429" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="middle">Candidates</text>
+<path d="M998 460 L1010 460 C1032 460 1032 460 1032 438 L1032 367 C1032 345 1032 345 1054 345 L1088 345" fill="none" stroke="#197F83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1078 339.5 L1088 345 L1078 350.5" fill="none" stroke="#197F83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M998 460 L1088 460" fill="none" stroke="#906528" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7"/>
+<path d="M1078 454.5 L1088 460 L1078 465.5" fill="none" stroke="#906528" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M998 460 L1010 460 C1032 460 1032 460 1032 482 L1032 563 C1032 585 1032 585 1054 585 L1088 585" fill="none" stroke="#715C91" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7"/>
+<path d="M1078 579.5 L1088 585 L1078 590.5" fill="none" stroke="#715C91" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1088" y="290" width="446" height="110" rx="12" fill="#F3F9F8" stroke="#A8CDCA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1110" y="332" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#197F83" text-anchor="start">Harness</text>
+<rect x="1395.705078125" y="308" width="116.294921875" height="30" rx="6" fill="#E3F0EE" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1453.8525390625" y="330" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#197F83" text-anchor="middle">Supported</text>
+<text x="1110" y="373" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="start">Prompts · Tools · Skills · Context</text>
+<rect x="1088" y="428" width="446" height="86" rx="12" fill="#FCFAF6" stroke="#E3D8C7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1110" y="465" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#906528" text-anchor="start">Seed Tasks</text>
+<rect x="1382.4140625" y="442" width="129.5859375" height="30" rx="6" fill="#F2EADC" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1447.20703125" y="464" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#906528" text-anchor="middle">Future work</text>
+<text x="1110" y="495" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="start">Generate targeted tasks</text>
+<rect x="1088" y="542" width="446" height="86" rx="12" fill="#F9F7FB" stroke="#DBD3E5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1110" y="579" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#715C91" text-anchor="start">Model</text>
+<rect x="1371.28125" y="556" width="140.71875" height="30" rx="6" fill="#EDE7F4" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1441.640625" y="578" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#715C91" text-anchor="middle">Experimental</text>
+<text x="1110" y="609" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="start">Update model parameters</text>
+<rect x="934" y="668" width="386" height="80" rx="12" fill="#EFF4F7" stroke="#AEBFCD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1127" y="701" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#5A718A" text-anchor="middle">Evaluate &amp; Promote</text>
+<text x="1127" y="732" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="middle">Objective + evaluation budget</text>
+<path d="M68 775 L1604 775" fill="none" stroke="#DEE8E9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68 807 L108 807" fill="none" stroke="#197F83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="122" y="814" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="start">Implemented harness loop</text>
+<path d="M460 807 L500 807" fill="none" stroke="#5A718A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7"/>
+<text x="514" y="814" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#53676E" text-anchor="start">Experimental / future extensions</text>
+<text x="1604" y="814" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#5A718A" text-anchor="end">github.com/rsi-gear/gear</text>
+</svg>

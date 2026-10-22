@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-22",
+  "title": "GEAR paper results",
+  "source": {
+    "type": "user-provided-paper-screenshot",
+    "date": "2026-10-22",
+    "precision": "Displayed percentages rounded to one decimal place; supplied deltas are computed from unrounded values."
+  },
+  "units": {
+    "metrics": "percent",
+    "suppliedDeltas": "percentage points"
+  },
+  "display": {
+    "mainTableDecimalPlaces": 1,
+    "deltaPolicy": "Use supplied deltas; do not recompute from displayed rounded percentages."
+  },
+  "metricDefinitions": {
+    "passRatePercent": "Percentage of tasks passing all scored checks.",
+    "objectiveCompletionPercent": "Mean fraction of scored assertions satisfied per task, expressed as a percentage."
+  },
+  "rows": [
+    {
+      "id": "luna-medium-base",
+      "model": "GPT 5.6 Luna",
+      "modelId": "gpt-5.6-luna",
+      "effort": "medium",
+      "harness": "DSH",
+      "variant": "Base",
+      "metrics": {
+        "marketing": {
+          "passRatePercent": 27.0,
+          "objectiveCompletionPercent": 75.4
+        },
+        "support": {
+          "passRatePercent": 17.0,
+          "objectiveCompletionPercent": 72.9
+        },
+        "coding": {
+          "passRatePercent": 52.9
+        }
+      }
+    },
+    {
+      "id": "luna-medium-ours",
+      "model": "GPT 5.6 Luna",
+      "modelId": "gpt-5.6-luna",
+      "effort": "medium",
+      "harness": "DSH",
+      "variant": "Ours",
+      "metrics": {
+        "marketing": {
+          "passRatePercent": 40.0,
+          "objectiveCompletionPercent": 83.9
+        },
+        "support": {
+          "passRatePercent": 25.0,
+          "objectiveCompletionPercent": 81.3
+        },
+        "coding": {
+          "passRatePercent": 62.9
+        }
+      }
+    },
+    {
+      "id": "astra-max-base",
+      "model": "GPT 6 Astra",
+      "modelId": "gpt-6-astra",
+      "effort": "max",
+      "harness": "Codex",
+      "variant": "Base",
+      "metrics": {
+        "marketing": {
+          "passRatePercent": 57.0,
+          "objectiveCompletionPercent": 84.1
+        },
+        "support": {
+          "passRatePercent": 35.0,
+          "objectiveCompletionPercent": 88.4
+        },
+        "coding": {
+          "passRatePercent": 86.7
+        }
+      }
+    },
+    {
+      "id": "astra-max-ours",
+      "model": "GPT 6 Astra",
+      "modelId": "gpt-6-astra",
+      "effort": "max",
+      "harness": "DSH",
+      "variant": "Ours",
+      "metrics": {
+        "marketing": {
+          "passRatePercent": 61.0,
+          "objectiveCompletionPercent": 86.3
+        },
+        "support": {
+          "passRatePercent": 39.0,
+          "objectiveCompletionPercent": 88.7
+        },
+        "coding": {
+          "passRatePercent": 87.6
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "baselineRow": "luna-medium-base",
+      "optimizedRow": "luna-medium-ours",
+      "suppliedDeltas": {
+        "marketing": {
+          "passRatePercentagePoints": 13.0,
+          "objectiveCompletionPercentagePoints": 8.5
+        },
+        "support": {
+          "passRatePercentagePoints": 8.0,
+          "objectiveCompletionPercentagePoints": 8.4
+        },
+        "coding": {
+          "passRatePercentagePoints": 10.1
+        }
+      },
+      "basis": "User-supplied paper table; deltas computed from unrounded values."
+    },
+    {
+      "baselineRow": "astra-max-base",
+      "optimizedRow": "astra-max-ours",
+      "suppliedDeltas": {
+        "marketing": {
+          "passRatePercentagePoints": 4.0,
+          "objectiveCompletionPercentagePoints": 2.2
+        },
+        "support": {
+          "passRatePercentagePoints": 4.0,
+          "objectiveCompletionPercentagePoints": 0.3
+        },
+        "coding": {
+          "passRatePercentagePoints": 0.9
+        }
+      },
+      "basis": "User-supplied paper table; deltas computed from unrounded values."
+    }
+  ],
+  "supplementaryEvaluations": [
+    {
+      "id": "luna-max-ours",
+      "model": "GPT 5.6 Luna",
+      "modelId": "gpt-5.6-luna",
+      "effort": "max",
+      "harness": "DSH",
+      "variant": "Ours",
+      "metrics": {
+        "marketing": {
+          "passRatePercent": 53.0,
+          "objectiveCompletionPercent": 88.8802379242704
+        },
+        "support": {
+          "passRatePercent": 27.0,
+          "objectiveCompletionPercent": 82.4
+        },
+        "coding": {
+          "passRatePercent": 84.26
+        }
+      },
+      "sources": {
+        "marketing": {
+          "file": "marketing-results.json",
+          "field": "effortComparison[1]"
+        },
+        "support": {
+          "type": "user-provided-clarification",
+          "date": "2026-10-22",
+          "note": "Luna max Support task pass rate is 27%; objective completion is 0.824, recorded here as 82.4%."
+        },
+        "coding": {
+          "file": "coding-results.json",
+          "field": "max.passRate"
+        }
+      },
+      "notes": [
+        "Separate max-effort evaluation; comparisons with Luna medium change reasoning effort.",
+        "Marketing and Coding retain the existing precise local source values; Support incorporates the user clarification."
+      ]
+    }
+  ],
+  "scope": {
+    "marketing": {
+      "benchmark": "AutomationBench public Marketing",
+      "tasks": 100,
+      "validationMode": "shared-set-research",
+      "independentHeldOut": false,
+      "detailsFile": "marketing-results.json"
+    },
+    "support": {
+      "benchmarkVersion": null,
+      "scoredTaskCount": null,
+      "independentHeldOut": null,
+      "detailsFile": "support-results.json"
+    },
+    "coding": {
+      "benchmark": "Terminal-Bench 2.1",
+      "scoredTaskCount": null,
+      "independentHeldOut": null,
+      "detailsFile": "coding-results.json"
+    }
+  },
+  "historicalDataFiles": [
+    "marketing-results.json",
+    "support-results.json",
+    "coding-results.json"
+  ],
+  "notes": [
+    "Main-table metrics reproduce the user-supplied paper screenshot as one-decimal percentages; they do not replace precise historical values or audit metadata in the domain files.",
+    "Supplied deltas are percentage-point gains, not relative percentage improvements. The Coding Luna +10.1-point delta differs from subtraction of displayed one-decimal values because it is based on unrounded values.",
+    "Marketing used the same 100 public tasks for optimization and evaluation; these values do not establish independent held-out generalization.",
+    "The new Support and Coding Astra aggregates are user-supplied paper results. No missing benchmark version, task count, per-task audit, confidence interval, or validation status is inferred.",
+    "The Luna medium baseline-to-optimized comparison includes the earlier harness optimization and the staged continuation; it must not be attributed entirely to Staged GEPA."
+  ]
+}

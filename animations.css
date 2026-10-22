@@ -1,0 +1,62 @@
+.animation-panel{margin-top:31px}
+.animation-actions{display:flex;gap:20px;align-items:center;font-size:10px;white-space:nowrap}
+.animation-actions a{color:#576047}
+.animation-actions a:hover{text-decoration:underline;text-underline-offset:3px}
+.animation-stage{background:white;position:relative;overflow:hidden}
+.animation-video{display:block;width:100%;height:auto;aspect-ratio:1600/850;background:#fff}
+[data-animation="evolutionary-search"] .animation-video{aspect-ratio:1600/900}
+.animation-controls{display:flex;gap:16px;align-items:center;padding:13px 22px;border-top:1px solid #e8ebe3}
+.animation-controls button{border:1px solid #dfe3d8;border-radius:5px;background:#fff;padding:6px 12px;min-width:74px;font-size:11px;color:#30382a;line-height:18px;white-space:nowrap}
+.animation-controls button:hover{background:#f3f5ec}
+.animation-controls .play-animation{background:#171916;color:#fff;border-color:#171916}
+.animation-controls .play-animation:hover{background:#3b4232}
+.timeline-label{display:flex;align-items:center;flex:1;min-width:50px}
+.animation-scrubber{width:100%;accent-color:#566344;cursor:pointer;height:20px}
+.animation-time{font-size:10px;font-variant-numeric:tabular-nums;min-width:30px;color:#5b6352}
+.loop-label{font-size:8px;letter-spacing:1.2px;color:#6b735f}
+.animation-chapters{display:flex;padding:0 18px 15px;gap:5px;overflow:auto}
+.animation-chapters button{display:flex;align-items:center;justify-content:center;gap:7px;flex:1;border:1px solid transparent;border-radius:4px;white-space:nowrap;padding:9px 6px;background:#f7f8f4;color:#626a56;font-size:10px;line-height:1.4}
+.animation-chapters button span{font-size:8px;opacity:.75;font-variant-numeric:tabular-nums}
+.animation-chapters button[aria-current="step"]{background:#edf2df;border-color:#b4c099;color:#303b20}
+.animation-error{font-size:12px;margin:0;padding:15px 22px;color:#8b352e;background:#fff4f1}
+.technical-figure{margin-top:18px;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.technical-figure>summary{display:flex;justify-content:space-between;align-items:center;padding:15px 21px;list-style:none;font-size:11px;cursor:pointer;color:#505a42;background:#fafbf7}
+.technical-figure>summary::-webkit-details-marker{display:none}
+.technical-figure>summary>span{font-size:19px;line-height:18px}
+.technical-figure[open]>summary>span{rotate:45deg}
+.technical-figure .figure-panel{margin:0;border:none;border-radius:0}
+.technical-figure[open]>.figure-panel{border-top:1px solid var(--line)}
+.policy-explorer{border:1px solid #ded8e6;border-radius:9px;margin-top:25px;background:#fdfcfe;overflow:hidden}
+.policy-heading{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;padding:24px 24px 20px}
+.policy-eyebrow{font-size:9px;letter-spacing:1.4px;text-transform:uppercase;color:#775b92;display:block;margin-bottom:10px}
+.policy-heading h3{font-size:19px;font-weight:650;letter-spacing:-.5px}
+.module-legend{font-size:10px;white-space:nowrap;display:flex;align-items:center;gap:6px;color:#775b92}
+.module-legend i{width:10px;height:10px;display:block;border:1px solid #ac8bc4;border-radius:3px;background:#f2ecfa}
+.policy-tabs{display:flex;gap:8px;padding:0 24px 20px;overflow:auto}
+.policy-tabs button{flex:1;white-space:nowrap;background:#fff;border:1px solid #d8cce4;padding:10px 11px;border-radius:5px;color:#77538f;font-size:11px;font-weight:550}
+.policy-tabs button[aria-selected="true"]{color:#fff;border-color:#7c5c95;background:#7c5c95}
+.policy-tabs button:hover{border-color:#77538f}
+.policy-panel{display:grid;grid-template-columns:1.25fr 1fr;gap:42px;padding:24px;border-top:1px solid #e5deed;border-bottom:1px solid #e5deed;background:#fff;min-height:185px}
+.policy-stage{font-size:9px;letter-spacing:1.1px;color:#866a9d;text-transform:uppercase}
+.policy-panel h4{font-size:19px;line-height:1.4;letter-spacing:-.4px;margin:7px 0 10px;font-weight:650}
+.policy-panel p{font-size:12px;line-height:1.85;color:#646c5d;margin:0}
+.policy-panel dl{margin:0;border-left:1px solid #e5deed;padding-left:27px;align-self:center}
+.policy-panel dl>div+div{margin-top:18px}
+.policy-panel dt{font-size:9px;letter-spacing:.8px;text-transform:uppercase;color:#866a9d;margin-bottom:5px}
+.policy-panel dd{margin:0;font-size:12px;line-height:1.7;color:#4d5545}
+.edit-space{display:flex;gap:7px;padding:17px 24px;align-items:center;flex-wrap:wrap}
+.edit-space>span:first-child{font-size:10px;letter-spacing:.3px;margin-right:5px;background:none;border:0;padding-left:0;color:#626a58}
+.edit-space>span{font-size:9px;border:1px solid #dfe4d7;background:#f5f7ee;color:#586344;border-radius:4px;padding:5px 8px}
+.policy-boundary{font-size:10px;line-height:1.8;color:#737968;margin:0;padding:0 24px 19px}
+@media(max-width:700px){
+  .animation-panel{margin-top:24px}
+  .animation-panel .figure-bar{align-items:flex-start;gap:7px}.animation-panel .figure-bar>span{font-size:9px;max-width:65%}
+  .animation-actions{gap:10px;font-size:9px}
+  .animation-controls{padding:10px 12px;gap:9px}.animation-controls button{font-size:10px;padding:5px 8px;min-width:53px}.loop-label{display:none}.animation-time{font-size:9px;min-width:25px}
+  .animation-chapters{padding:0 12px 12px;gap:4px}.animation-chapters button{font-size:9px;padding:7px}.animation-chapters button span{display:none}
+  .technical-figure>summary{font-size:10px;padding:13px}
+  .policy-heading{padding:20px 15px 16px;display:block}.policy-heading h3{font-size:17px;line-height:1.5}.module-legend{margin-top:10px;font-size:9px}
+  .policy-tabs{padding:0 15px 16px;gap:6px}.policy-tabs button{font-size:10px;padding:9px}
+  .policy-panel{grid-template-columns:1fr;padding:18px 15px;gap:20px;min-height:315px}.policy-panel h4{font-size:18px}.policy-panel p{font-size:11px}.policy-panel dl{padding:16px 0 0;border:0;border-top:1px solid #e5deed;display:grid;grid-template-columns:1fr 1fr;gap:18px}.policy-panel dl>div+div{margin:0}.policy-panel dd{font-size:10px}
+  .edit-space{padding:15px;gap:6px}.edit-space>span:first-child{width:100%}.edit-space>span{font-size:8px;padding:4px 6px}.policy-boundary{font-size:9px;padding:0 15px 16px}
+}
